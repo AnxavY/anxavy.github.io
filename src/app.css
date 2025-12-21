@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+@import 'tailwindcss';
+@plugin 'daisyui';
+
+@layer base {
+  html {
+    font-family: 'Sour Gummy', sans-serif;
+  }
+}
+
+@layer utilities {
+  .menu {
+    @layer daisyui {
+      --menu-active-fg: black;
+      --menu-active-bg: transparent;
+    }
+  }
+}
+
+@layer components {
+  .breadcrumbs {
+    & > ul > li,
+    & > ol > li {
+      & + *:before {
+        content: '/' !important; /* Replaces chevron with slash */
+        color: black !important; /* Sets slash color */
+        border: none !important; /* Removes daisyUI's border-based chevron */
+        rotate: 0deg !important; /* Resets the 45-degree rotation */
+        opacity: 1 !important; /* Makes the red solid/visible */
+        width: auto !important;
+        height: auto !important; /* Resets fixed height */
+      }
+    }
+  }
+}
