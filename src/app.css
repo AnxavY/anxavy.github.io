@@ -32,4 +32,16 @@
       }
     }
   }
+
+  .timeline-vertical {
+    & > li {
+      grid-template-rows: minmax(0, auto) 1fr minmax(0, auto);
+    }
+
+    .timeline-start,
+    .timeline-end {
+      padding-top: 0;
+      padding-bottom: 0.25rem;
+    }
+  }
 }
