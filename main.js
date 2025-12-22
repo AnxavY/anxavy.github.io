@@ -4,8 +4,28 @@ async function loadComponent(id, file) {
     if (!response.ok) throw new Error(`Failed to load ${file}`);
     const data = await response.text();
     document.getElementById(id).innerHTML = data;
+
+    if (id === 'navbar-component') {
+      updateBreadcrumbs();
+    }
   } catch (error) {
     console.error('Error loading component:', error);
+  }
+}
+
+function updateBreadcrumbs() {
+  const path = window.location.pathname;
+  const page = path.split('/').pop();
+
+  const breadcrumbList = document.querySelector('.breadcrumbs ul');
+  const secondaryItem = breadcrumbList.querySelector('li:nth-child(2)');
+
+  if (page === 'about.html') {
+    secondaryItem.textContent = 'about.html';
+  } else if (page === 'index.html' || page === '') {
+    secondaryItem.textContent = '';
+  } else {
+    secondaryItem.textContent = page;
   }
 }
 

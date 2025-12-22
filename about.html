@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="src/dist/output.css" rel="stylesheet" />
+  </head>
+  <body
+    class="bg-[url('/src/images/background.webp')] bg-cover bg-no-repeat bg-fixed bg-center h-screen"
+  >
+    <div class="max-w-5xl mx-auto mb-4">
+      <div class="drawer">
+        <input id="my-drawer-2" type="checkbox" class="drawer-toggle" />
+        <div class="drawer-content flex flex-col">
+          <div id="navbar-component"></div>
+          <div class="hero max-w-screen bg-white shadow-sm rounded-2xl mb-2">
+            <div class="hero-content flex-col lg:flex-row">
+              <img
+                src="src/images/anxav_about.webp"
+                class="max-w-3xs rounded-lg"
+              />
+              <div>
+                <p class="py-3 text-black text-lg font-medium">
+                  23 years old game development fresh graduate from Malaysia. If
+                  you're somehow interested, my MBTI is INTP.<br />
+                  game developing/designing, watching F1 (casual), graphic
+                  design, karting, video editing.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white p-6 rounded-2xl shadow-sm">
+            <h1
+              class="text-black bg-[#e3e3e3] text-lg font-semibold w-fit rounded-lg px-3"
+            >
+              Tech Stack
+            </h1>
+            <div class="mt-5 mb-5 flex flex-row flex-wrap gap-3">
+              <div
+                class="tooltip font-semibold hover:scale-115"
+                data-tip="Unity"
+              >
+                <img src="src/images/unity.webp" class="w-9 h-9" />
+              </div>
+              <div
+                class="tooltip font-semibold hover:scale-115"
+                data-tip="C# in Game Development"
+              >
+                <img src="src/images/c_sharp.webp" class="w-8 h-9" />
+              </div>
+              <div class="tooltip font-semibold hover:scale-115" data-tip="Git">
+                <img src="src/images/git.webp" class="w-10 h-9" />
+              </div>
+              <div
+                class="tooltip font-semibold hover:scale-115"
+                data-tip="Vercel"
+              >
+                <img src="src/images/vercel.webp" class="w-9 h-9" />
+              </div>
+              <div
+                class="tooltip font-semibold hover:scale-115"
+                data-tip="Next.js"
+              >
+                <img src="src/images/nextjs.webp" class="w-9 h-9" />
+              </div>
+              <div
+                class="tooltip font-semibold hover:scale-115"
+                data-tip="Tailwind CSS"
+              >
+                <img src="src/images/tailwindcss.webp" class="w-11 h-9" />
+              </div>
+              <div
+                class="tooltip font-semibold hover:scale-115"
+                data-tip="PostgreSQL"
+              >
+                <img src="src/images/pgsql.webp" class="w-9 h-9" />
+              </div>
+              <div
+                class="tooltip font-semibold hover:scale-115"
+                data-tip="Prisma"
+              >
+                <img src="src/images/prisma.webp" class="w-9 h-9" />
+              </div>
+              <div
+                class="tooltip font-semibold hover:scale-115"
+                data-tip="Typescript"
+              >
+                <img
+                  src="src/images/typescript.webp"
+                  class="w-9 h-9 rounded-sm"
+                />
+              </div>
+              <div
+                class="tooltip font-semibold hover:scale-115"
+                data-tip="HTML"
+              >
+                <img src="src/images/html5.webp" class="w-9 h-9" />
+              </div>
+              <div class="tooltip font-semibold hover:scale-115" data-tip="CSS">
+                <img src="src/images/css3.webp" class="w-9 h-9" />
+              </div>
+              <div
+                class="tooltip font-semibold hover:scale-115"
+                data-tip="Javascript"
+              >
+                <img
+                  src="src/images/javascript.webp"
+                  class="w-9 h-9 rounded-sm"
+                />
+              </div>
+              <div
+                class="tooltip font-semibold hover:scale-115"
+                data-tip="Bootstrap"
+              >
+                <img src="src/images/bootstrap.webp" class="w-11 h-9" />
+              </div>
+            </div>
+            <h1
+              class="text-black bg-[#e3e3e3] text-lg font-semibold w-fit rounded-lg px-3"
+            >
+              Software/Tools
+            </h1>
+            <div class="mt-5 flex flex-row flex-wrap gap-4">
+              <div
+                class="tooltip font-semibold hover:scale-115"
+                data-tip="Figma"
+              >
+                <img src="src/images/figma.webp" class="w-6 h-8" />
+              </div>
+              <div
+                class="tooltip font-semibold hover:scale-115"
+                data-tip="Adobe Photoshop"
+              >
+                <img src="src/images/photoshop.webp" class="w-8 h-8" />
+              </div>
+              <div
+                class="tooltip font-semibold hover:scale-115"
+                data-tip="Davinci Resolve"
+              >
+                <img src="src/images/davinciresolve.webp" class="w-8 h-8" />
+              </div>
+              <div
+                class="tooltip font-semibold hover:scale-115"
+                data-tip="Blender"
+              >
+                <img src="src/images/blender.webp" class="w-9 h-8" />
+              </div>
+              <div
+                class="tooltip font-semibold hover:scale-115"
+                data-tip="Sony Vegas"
+              >
+                <img src="src/images/sonyvegas.webp" class="w-8 h-8" />
+              </div>
+              <div
+                class="tooltip font-semibold hover:scale-115"
+                data-tip="DBeaver"
+              >
+                <img src="src/images/dbeaver.webp" class="w-9 h-8" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Sidebar -->
+        <div class="drawer-side z-50">
+          <label
+            for="my-drawer-2"
+            aria-label="close sidebar"
+            class="drawer-overlay"
+          ></label>
+          <div id="sidebar-component" class="h-full"></div>
+        </div>
+      </div>
+    </div>
+    <div id="footer-component"></div>
+    <script src="main.js"></script>
+  </body>
+</html>
