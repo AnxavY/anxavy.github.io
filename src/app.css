@@ -6,6 +6,15 @@
   html {
     font-family: 'Sour Gummy', sans-serif;
   }
+
+  .menu {
+    & :where(li ul) {
+      &:before {
+        --color-base-content: black;
+        opacity: 50% !important;
+      }
+    }
+  }
 }
 
 @layer utilities {
