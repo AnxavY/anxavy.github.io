@@ -20,11 +20,7 @@ function updateBreadcrumbs() {
   const breadcrumbList = document.querySelector('.breadcrumbs ul');
   const secondaryItem = breadcrumbList.querySelector('li:nth-child(2)');
 
-  if (page === 'about.html') {
-    secondaryItem.textContent = 'about.html';
-  } else if (page === 'creations.html') {
-    secondaryItem.textContent = 'creations.html';
-  } else if (page === 'index.html' || page === '') {
+  if (page === 'index.html' || page === '') {
     secondaryItem.textContent = '';
   } else {
     secondaryItem.textContent = page;
