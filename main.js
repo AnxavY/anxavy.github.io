@@ -22,6 +22,8 @@ function updateBreadcrumbs() {
 
   if (page === 'about.html') {
     secondaryItem.textContent = 'about.html';
+  } else if (page === 'creations.html') {
+    secondaryItem.textContent = 'creations.html';
   } else if (page === 'index.html' || page === '') {
     secondaryItem.textContent = '';
   } else {
@@ -33,4 +35,16 @@ document.addEventListener('DOMContentLoaded', () => {
   loadComponent('navbar-component', './src/components/navbar.html');
   loadComponent('footer-component', './src/components/footer.html');
   loadComponent('sidebar-component', './src/components/sidebar.html');
+});
+
+const hoverImages = [
+  'src/images/linkedin_hover.png',
+  'src/images/github-hover.svg',
+  'src/images/behance_hover.png',
+  'src/images/itchio-hover.svg',
+];
+
+hoverImages.forEach((src) => {
+  const img = new Image();
+  img.src = src;
 });
