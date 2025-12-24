@@ -25,6 +25,10 @@
       --menu-active-bg: transparent;
     }
   }
+
+  .card-body {
+    gap: 2px;
+  }
 }
 
 @layer components {
