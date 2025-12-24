@@ -36,15 +36,3 @@ document.addEventListener('DOMContentLoaded', () => {
   loadComponent('footer-component', './src/components/footer.html');
   loadComponent('sidebar-component', './src/components/sidebar.html');
 });
-
-const hoverImages = [
-  'src/images/linkedin_hover.png',
-  'src/images/github-hover.svg',
-  'src/images/behance_hover.png',
-  'src/images/itchio-hover.svg',
-];
-
-hoverImages.forEach((src) => {
-  const img = new Image();
-  img.src = src;
-});
