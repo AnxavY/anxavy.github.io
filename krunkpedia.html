@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="src/dist/output.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body
+    class="bg-[url('/src/images/background.webp')] bg-cover bg-no-repeat bg-fixed bg-center min-h-screen pb-4"
+  >
+    <div class="max-w-5xl mx-auto">
+      <div class="drawer">
+        <input id="my-drawer-2" type="checkbox" class="drawer-toggle" />
+        <div class="drawer-content flex flex-col px-4">
+          <div id="navbar-component"></div>
+          <div class="max-w-screen p-6 bg-white shadow-sm rounded-2xl mb-2">
+            <h1 class="text-3xl text-black font-bold">Krunkpedia</h1>
+            <div class="text-black">
+              <p class="mb-6">
+                A community-driven wiki documenting the competitive scene of
+                <a
+                  href="https://krunker.io/"
+                  class="text-[#FFBE0F] underline decoration-dashed"
+                  >Krunker.io</a
+                >
+                . Tracking 100+ tournaments, 200+ players, and $80,000+ in prize
+                earnings across multiple regions.
+              </p>
+              <div class="flex flex-wrap gap-2 items-center">
+                <i class="fa fa-tags mr-1"></i>
+                <div class="badge badge-outline text-xs bg-[#e3e3e3] border-0">
+                  Next.js
+                </div>
+                <div class="badge badge-outline text-xs bg-[#e3e3e3] border-0">
+                  Vercel
+                </div>
+                <div class="badge badge-outline text-xs bg-[#e3e3e3] border-0">
+                  PostgreSQL
+                </div>
+                <div class="badge badge-outline text-xs bg-[#e3e3e3] border-0">
+                  React
+                </div>
+                <div class="badge badge-outline text-xs bg-[#e3e3e3] border-0">
+                  Drizzle
+                </div>
+                <div class="badge badge-outline text-xs bg-[#e3e3e3] border-0">
+                  Tailwind CSS
+                </div>
+                <div class="badge badge-outline text-xs bg-[#e3e3e3] border-0">
+                  Typescript
+                </div>
+                <div class="badge badge-outline text-xs bg-[#e3e3e3] border-0">
+                  maintaining
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="max-w-screen p-6 bg-white shadow-sm rounded-2xl">
+            <h2 class="text-2xl text-black font-bold mb-4">Screenshots</h2>
+            <div class="grid grid-cols-2 gap-2">
+              <img
+                src="src/images/krpedia_home_page.webp"
+                alt="Krunkpedia home page"
+                class="w-full h-full object-cover rounded-lg"
+              />
+              <img
+                src="src/images/krpedia_tournament_page.webp"
+                alt="Krunkpedia tournament page"
+                class="w-full rounded-lg"
+              />
+              <img
+                src="src/images/krpedia_player_profile.webp"
+                alt="Krunkpedia player profile page"
+                class="w-full rounded-lg"
+              />
+              <img
+                src="src/images/krpedia_earnings.webp"
+                alt="Krunkpedia earnings leaderboard"
+                class="w-full rounded-lg"
+              />
+            </div>
+          </div>
+        </div>
+        <!-- Sidebar -->
+        <div class="drawer-side z-50">
+          <label
+            for="my-drawer-2"
+            aria-label="close sidebar"
+            class="drawer-overlay"
+          ></label>
+          <div id="sidebar-component" class="h-full"></div>
+        </div>
+      </div>
+    </div>
+    <div id="footer-component" class="px-4"></div>
+    <script src="main.js"></script>
+  </body>
+</html>
