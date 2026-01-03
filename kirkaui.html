@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="src/dist/output.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body
+    class="bg-[url('/src/images/background.webp')] bg-cover bg-no-repeat bg-fixed bg-center min-h-screen pb-4"
+  >
+    <div class="max-w-5xl mx-auto">
+      <div class="drawer">
+        <input id="my-drawer-2" type="checkbox" class="drawer-toggle" />
+        <div class="drawer-content flex flex-col px-4">
+          <div id="navbar-component"></div>
+          <div class="max-w-screen p-6 bg-white shadow-sm rounded-2xl mb-2">
+            <h1 class="text-3xl text-black font-bold">
+              Kirka.io User Interface
+            </h1>
+            <div class="text-black">
+              Main menu and HUD that I made. You can head to
+              <a
+                href="https://kirka.io/"
+                target="_blank"
+                class="text-[#FFBE0F] underline decoration-dashed"
+                >Kirka.io</a
+              >
+              to see the default main menu and HUD.
+            </div>
+          </div>
+          <div class="max-w-screen p-6 bg-white shadow-sm rounded-2xl">
+            <div>
+              <h2
+                class="w-fit bg-[#e3e3e3] rounded-lg px-3 mb-3 text-base text-black font-medium"
+              >
+                December 12th, 2022
+              </h2>
+              <div class="grid grid-cols-2 gap-2 mb-6">
+                <img
+                  src="src/images/user_interface/aimcss.webp"
+                  class="w-full h-full object-cover rounded-lg"
+                />
+                <img
+                  src="src/images/user_interface/aimcss_hud.webp"
+                  class="w-full h-full object-cover rounded-lg"
+                />
+              </div>
+            </div>
+            <div>
+              <h2
+                class="w-fit bg-[#e3e3e3] rounded-lg px-3 mt-8 mb-3 text-base text-black font-medium"
+              >
+                May 22th, 2022
+              </h2>
+              <div class="grid grid-cols-2 gap-2">
+                <img
+                  src="src/images/user_interface/animecss.webp"
+                  class="w-full h-full object-cover rounded-lg"
+                />
+                <img
+                  src="src/images/user_interface/animehud.webp"
+                  class="w-full h-full object-cover rounded-lg"
+                />
+              </div>
+            </div>
+            <div>
+              <h2
+                class="w-fit bg-[#e3e3e3] rounded-lg px-3 mt-8 mb-3 text-base text-black font-medium"
+              >
+                March 3rd, 2022
+              </h2>
+              <div class="grid grid-cols-2 gap-2">
+                <img
+                  src="src/images/user_interface/css2.webp"
+                  class="w-full h-full object-cover rounded-lg"
+                />
+                <img
+                  src="src/images/user_interface/csshud2.webp"
+                  class="w-full h-full object-cover rounded-lg"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="drawer-side z-50">
+          <label
+            for="my-drawer-2"
+            aria-label="close sidebar"
+            class="drawer-overlay"
+          ></label>
+          <div id="sidebar-component" class="h-full"></div>
+        </div>
+      </div>
+    </div>
+    <div id="footer-component" class="px-4"></div>
+    <script src="main.js"></script>
+  </body>
+</html>
